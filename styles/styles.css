@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../assets/fonts/space_mono/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../assets/fonts/space_mono/SpaceMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("../assets/fonts/space_mono/SpaceMono-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+*::-moz-selection {
+  background-color: rgba(0, 0, 255, 0.5);
+  height: 100%;
+}
+
+*::selection {
+  background-color: rgba(0, 0, 255, 0.5);
+  height: 100%;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #f2f1f1;
+  font-family: "Space Mono", cursive;
+}
+
+main {
+  width: 80rem;
+  margin: auto;
+}
+
+p {
+  line-height: 1.2;
+  text-align: justify;
+}
+
+p strong {
+  font-weight: bold;
+}
+
+a:not(.project) {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: black 2px solid;
+}
+
+a:not(.project):hover {
+  border: none;
+  margin-bottom: 1px;
+}
+
+body > aside {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+}
+
+header {
+  margin-top: 11rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+header img {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  display: inline-block;
+  border: 3px solid black;
+  width: 100%;
+}
+
+header article {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  width: 100%;
+  padding: 5rem 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header article h1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+header article p {
+  font-size: 2rem;
+}
+
+section {
+  margin: 10rem 0;
+}
+
+section > p {
+  font-size: 2rem;
+}
+
+section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+section h2::before {
+  content: "#";
+  margin-right: 1rem;
+}
+
+section#about p {
+  font-size: 2rem;
+}
+
+section#about p + p {
+  margin-top: 5rem;
+}
+
+section#about p:nth-of-type(1):before {
+  content: "📚";
+}
+
+section#about p:nth-of-type(2):before {
+  content: "🔭";
+}
+
+section#about p:nth-of-type(3):before {
+  content: "🏃‍♂️";
+}
+
+section#portfolio > p::before {
+  content: "💾";
+  margin-right: 1rem;
+}
+
+section#portfolio .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+section#portfolio .project:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+section#portfolio .project img {
+  width: 48%;
+  border: 3px solid black;
+  margin: 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+section#portfolio .project article {
+  position: relative;
+  width: 48%;
+  padding: 1rem;
+}
+
+section#portfolio .project article h3 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: bold;
+  font-size: 2rem;
+  border-bottom: black solid 2px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section#portfolio .project article h4 {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+section#portfolio .project article p {
+  font-size: 1.3rem;
+  max-height: 11rem;
+  overflow: hidden;
+}
+
+section#portfolio .project article a {
+  display: none;
+}
+
+section#skills > p::before {
+  content: "🛠️";
+  margin-right: 1rem;
+}
+
+section#skills aside {
+  width: 100%;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  padding: 2rem 0;
+  margin: 2rem 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  overflow: hidden;
+}
+
+section#skills aside.hidden {
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+section#skills aside img {
+  float: left;
+  width: 10rem;
+  margin-right: 1rem;
+}
+
+section#skills aside article h4 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+section#skills aside article p {
+  font-size: 1.5rem;
+}
+
+section#skills aside article .links {
+  margin-top: 1rem;
+}
+
+section#skills aside article .links::before {
+  content: ">";
+}
+
+section#skills article {
+  margin-bottom: 2rem;
+}
+
+section#skills article h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+section#skills article h3::before {
+  content: "🔨";
+  margin-right: 1rem;
+}
+
+section#skills article img {
+  height: 7rem;
+  max-width: 10rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
