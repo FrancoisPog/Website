@@ -71,7 +71,7 @@ p {
   }
 }
 
-a:not(.project) {
+a.inline {
   color: $lightTextColor;
   font-weight: bold;
   text-decoration: none;
@@ -260,7 +260,7 @@ section#skills aside {
     p {
       font-size: 1.5rem;
     }
-    .links {
+    .usage-links {
       margin-top: 1rem;
       &::before {
         content: ">";
@@ -270,7 +270,6 @@ section#skills aside {
 }
 
 section#skills article {
-  margin-bottom: 2rem;
   h3 {
     font-size: 2rem;
     font-weight: bold;
@@ -280,9 +279,85 @@ section#skills article {
       margin-right: 1rem;
     }
   }
-  img {
-    height: 7rem;
-    max-width: 10rem;
-    cursor: pointer;
+
+  .skills-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    img {
+      height: 7rem;
+      max-width: 10rem;
+      cursor: pointer;
+      margin: 1rem;
+    }
+  }
+}
+
+section#contact {
+  div {
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    p {
+      font-size: 2rem;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2rem;
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      ul#contact-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2rem 0;
+
+        a {
+          height: 3rem;
+          display: inline-block;
+          margin: 1rem;
+          img,
+          i {
+            height: 100%;
+            font-size: 2.8rem;
+          }
+        }
+      }
+
+      input,
+      textarea,
+      button {
+        border: none;
+        background-color: darken($lightBackgroundColor, 10%);
+        padding: 1rem;
+        font-family: "Space Mono", cursive;
+        margin: 0.5rem 0;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        padding: 0.5rem;
+        &:hover {
+          border: 0.3rem solid darken($lightBackgroundColor, 20%);
+          padding: 0.2rem;
+        }
+
+        &:active {
+          font-weight: bold;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 34 38"
+   version="1.1"
+   id="svg172"
+   sodipodi:docname="css.logo.svg"
+   width="34"
+   height="38"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <defs
+     id="defs176" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview174"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="16"
+     inkscape:cx="13.767654"
+     inkscape:cy="22.07476"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg172" />
+  <g
+     id="surface1"
+     transform="translate(-7,-5)">
+    <path
+       d="M 41,5 H 7 l 3,34 14,4 14,-4 z"
+       fill="#0277bd"
+       id="path161" />
+    <path
+       d="M 24,8 V 39.898 L 35.2,36.7 37.7,8 Z"
+       fill="#039be5"
+       id="path163" />
+    <path
+       d="M 33.102,13 H 24 v 4 h 4.898 l -0.296,4 H 24 v 4 h 4.398 L 28.102,29.5 24,30.898 v 4.204 L 31.898,32.5 32.602,21 Z"
+       fill="#ffffff"
+       id="path165" />
+    <path
+       d="m 24,13 v 4 h -8.898 l -0.301,-4 z m -4.602,8 0.204,4 H 24 v -4 z m 0.403,6 h -4 l 0.3,5.5 L 24,35.102 V 30.898 L 19.898,29.5 Z"
+       fill="#eeeeee"
+       id="path167" />
+  </g>
+  <metadata
+     id="metadata170">
+    <rdf:RDF>
+      <rdf:Description
+         about="https://iconscout.com/legal#licenses"
+         dc:title="css"
+         dc:description="css"
+         dc:publisher="Iconscout"
+         dc:date="2017-12-15"
+         dc:format="image/svg+xml"
+         dc:language="en">
+        <dc:creator>
+          <rdf:Bag>
+            <rdf:li>Icons8</rdf:li>
+          </rdf:Bag>
+        </dc:creator>
+      </rdf:Description>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

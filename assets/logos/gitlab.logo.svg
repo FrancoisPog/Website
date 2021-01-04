@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210.17674"
+   height="193.20572"
+   viewBox="0 0 210.17674 193.20572"
+   version="1.1"
+   id="svg1045"
+   sodipodi:docname="gitlab.logo.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata1049">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Fill 1 + Group 24</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview1047"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.2252747"
+     inkscape:cx="272.41625"
+     inkscape:cy="96.550617"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1045" />
+  <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title1024">Fill 1 + Group 24</title>
+  <desc
+     id="desc1026">Created with Sketch.</desc>
+  <defs
+     id="defs1028">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1053">
+      <rect
+         style="fill:#0000ff;fill-rule:evenodd"
+         id="rect1055"
+         width="210.31111"
+         height="193.68394"
+         x="2.3777771e-09"
+         y="0.44938272" />
+    </clipPath>
+  </defs>
+  <g
+     id="Page-1"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd"
+     sketch:type="MSPage"
+     transform="translate(-0.13436415,-0.44938272)"
+     clip-path="url(#clipPath1053)">
+    <g
+       id="Fill-1-+-Group-24"
+       sketch:type="MSLayerGroup">
+      <g
+         id="Group-24"
+         sketch:type="MSShapeGroup">
+        <path
+           d="m 316.7906,65.3001 c -15.289,0 -24.786,12.146 -24.786,31.7 0,19.554 9.497,31.7 24.786,31.7 5.744,0 11.081,-1.629 15.432,-4.712 l 0.211,-0.149 v -21.968 h -22 v -7.8 h 31 v 32.735 c -6.563,6.344 -15.079,9.694 -24.643,9.694 -20.524,0 -33.786,-15.505 -33.786,-39.5 0,-23.995 13.262,-39.5 33.786,-39.5 9.992,0 18.427,3.648 24.43,10.556 l -5.996,4.982 c -4.526,-5.134 -10.726,-7.738 -18.434,-7.738 z m 173.093,69.95 h -6.948 l -2.334,-6.448 -0.553,0.497 c -0.077,0.069 -7.829,6.951 -17.588,6.951 -9.851,0 -17,-6.554 -17,-15.583 0,-13.072 11.284,-15.816 20.749,-15.816 7.374,0 13.979,1.66 14.045,1.677 l 0.623,0.159 v -1.586 c 0,-7.115 -4.442,-10.723 -13.205,-10.723 -5.308,0 -10.917,1.311 -16.249,3.792 l -3.603,-6.212 c 4.706,-3.062 11.852,-6.58 19.852,-6.58 13.908,0 22.211,7.556 22.211,20.211 z m -19.195,-23.473 c -10.617,0 -16.228,3.074 -16.228,8.89 0,4.061 3.065,6.583 8,6.583 8.13,0 15.267,-3.332 18.202,-5.302 l 0.221,-0.148 v -9.18 l -0.416,-0.071 c -0.045,-0.008 -4.591,-0.772 -9.779,-0.772 z m -30.231,15.673 v 7.8 h -29.997 v -74 h 9 v 66.2 z m 80.484,9.05 c -5.845,0 -12.253,-0.804 -19.049,-2.391 v -72.859 h 9 v 28.063 l 0.773,-0.502 c 0.049,-0.032 5.069,-3.24 11.988,-3.24 1.38,0 2.761,0.129 4.095,0.381 11.345,2.324 18.118,11.478 18.118,24.487 0,15.344 -10.249,26.061 -24.925,26.061 z m 1.001,-42.122 c -3.579,0 -7.323,1.225 -10.826,3.541 l -0.224,0.149 v 29.834 l 0.427,0.063 c 3.379,0.495 6.616,0.747 9.622,0.747 9.376,0 15.925,-7.515 15.925,-18.273 0,-10.207 -5.44,-16.061 -14.924,-16.061 z m -123.491,-8.128 v 7.8 h -15 v 22.9 c 0,2.805 1.092,5.442 3.076,7.424 1.982,1.984 4.619,3.076 7.424,3.076 h 4.5 v 7.8 h -4.5 c -10.752,0 -19.5,-8.748 -19.5,-19.5 v -54.5 h 9 v 25 z m -45.009,-20 h 9 v 9 h -9 z m 0,20 h 9 v 49 h -9 z"
+           id="Fill-2"
+           fill="#8c929d" />
+        <g
+           id="Group">
+          <path
+             d="m 105.0614,193.655 v 0 l 38.64,-118.921 h -77.28 z"
+             id="Fill-4"
+             fill="#e24329" />
+          <path
+             id="Fill-6"
+             fill="#fc6d26"
+             d="" />
+          <path
+             d="M 105.0614,193.6548 66.4214,74.7338 H 12.2684 Z"
+             id="Fill-8"
+             fill="#fc6d26" />
+          <path
+             id="Fill-10"
+             fill="#fc6d26"
+             d="" />
+          <path
+             d="m 12.2685,74.7341 v 0 l -11.742,36.139 c -1.071,3.296 0.102,6.907 2.906,8.944 l 101.629,73.838 z"
+             id="Fill-12"
+             fill="#fca326" />
+          <path
+             id="Fill-14"
+             fill="#fc6d26"
+             d="" />
+          <path
+             d="m 12.2685,74.7342 h 54.153 L 43.1485,3.1092 c -1.197,-3.686 -6.411,-3.685 -7.608,0 z"
+             id="Fill-16"
+             fill="#e24329" />
+          <path
+             d="m 105.0614,193.6548 38.64,-118.921 h 54.153 z"
+             id="Fill-18"
+             fill="#fc6d26" />
+          <path
+             d="m 197.8544,74.7341 v 0 l 11.742,36.139 c 1.071,3.296 -0.102,6.907 -2.906,8.944 l -101.629,73.838 z"
+             id="Fill-20"
+             fill="#fca326" />
+          <path
+             d="m 197.8544,74.7342 h -54.153 l 23.273,-71.625 c 1.197,-3.686 6.411,-3.685 7.608,0 z"
+             id="Fill-22"
+             fill="#e24329" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

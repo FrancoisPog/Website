@@ -206,7 +206,7 @@ p strong {
   font-weight: bold;
 }
 
-a:not(.project) {
+a.inline {
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -214,7 +214,7 @@ a:not(.project) {
   border-bottom: black 2px solid;
 }
 
-a:not(.project):hover {
+a.inline:hover {
   border: none;
   margin-bottom: 1px;
 }
@@ -423,16 +423,12 @@ section#skills aside article p {
   font-size: 1.5rem;
 }
 
-section#skills aside article .links {
+section#skills aside article .usage-links {
   margin-top: 1rem;
 }
 
-section#skills aside article .links::before {
+section#skills aside article .usage-links::before {
   content: ">";
-}
-
-section#skills article {
-  margin-bottom: 2rem;
 }
 
 section#skills article h3 {
@@ -446,9 +442,112 @@ section#skills article h3::before {
   margin-right: 1rem;
 }
 
-section#skills article img {
+section#skills article .skills-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 3rem;
+}
+
+section#skills article .skills-group img {
   height: 7rem;
   max-width: 10rem;
   cursor: pointer;
+  margin: 1rem;
+}
+
+section#contact div {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section#contact div p {
+  font-size: 2rem;
+}
+
+section#contact div aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 2rem;
+}
+
+section#contact div aside p {
+  margin-bottom: 0.5rem;
+}
+
+section#contact div aside ul#contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 0;
+}
+
+section#contact div aside ul#contact-links a {
+  height: 3rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+section#contact div aside ul#contact-links a img,
+section#contact div aside ul#contact-links a i {
+  height: 100%;
+  font-size: 2.8rem;
+}
+
+section#contact div aside input,
+section#contact div aside textarea,
+section#contact div aside button {
+  border: none;
+  background-color: #d9d7d7;
+  padding: 1rem;
+  font-family: "Space Mono", cursive;
+  margin: 0.5rem 0;
+}
+
+section#contact div aside input:focus,
+section#contact div aside textarea:focus,
+section#contact div aside button:focus {
+  border: none;
+  outline: none;
+}
+
+section#contact div aside button {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+section#contact div aside button:hover {
+  border: 0.3rem solid #c1bcbc;
+  padding: 0.2rem;
+}
+
+section#contact div aside button:active {
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */
