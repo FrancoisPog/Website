@@ -18,9 +18,17 @@
   {
     "name": "Vélocity",
     "subtitle": "A self-service bicycle system",
-    "description": "",
+    "description": "This java application is a self-service bicycle system. Several famous design patterns are used in this project. This program is fully tested.",
     "skills": ["Java", "JUnit", "Maven", "Selenium", "OOP"],
-    "image": "",
-    "repository": "FrancoisPog/Vélocité"
+    "image": "assets/projects/velocity.png",
+    "repository": "FrancoisPog/Velocity"
+  },
+  {
+    "name": "Automaton",
+    "subtitle": "Automaton manipulation library",
+    "description": "This C++ library provides an interface for creating, manipulating and using automatons. This program is fully tested by unit tests with the GoogleTest library. ",
+    "skills": ["C++", "GoogleTests", "Lauguages Theory"],
+    "image": "assets/projects/automaton.png",
+    "repository": "FrancoisPog/Automaton"
   }
 ]

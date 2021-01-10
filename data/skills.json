@@ -8,7 +8,7 @@
       },
       {
         "id": "intellij",
-        "name": "intelliJ",
+        "name": "IntelliJ",
         "description": "For a java project a university, I used intelliJ to learn about software development, with tests, and CI / CD, managed by Maven."
       },
       {
