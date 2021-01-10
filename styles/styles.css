@@ -215,8 +215,7 @@ a.inline {
 }
 
 a.inline:hover {
-  border: none;
-  margin-bottom: 1px;
+  border-bottom-color: transparent;
 }
 
 body > aside {
@@ -377,6 +376,21 @@ section#portfolio .project article p {
   overflow: hidden;
 }
 
+section#portfolio .project article p.project-skills {
+  font-size: 1rem;
+}
+
+section#portfolio .project article p.project-skills span {
+  border: 2px solid black;
+  margin: 1rem 0;
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+}
+
+section#portfolio .project article p.project-skills span + span {
+  margin-left: 1rem;
+}
+
 section#portfolio .project article a {
   display: none;
 }
@@ -411,6 +425,7 @@ section#skills aside img {
   float: left;
   width: 10rem;
   margin-right: 1rem;
+  max-height: 10rem;
 }
 
 section#skills aside article h4 {
@@ -421,6 +436,17 @@ section#skills aside article h4 {
 
 section#skills aside article p {
   font-size: 1.5rem;
+}
+
+section#skills aside article p a + a {
+  margin-left: 1rem;
+  position: relative;
+}
+
+section#skills aside article p a + a::before {
+  content: ", ";
+  position: absolute;
+  left: -1rem;
 }
 
 section#skills aside article .usage-links {
