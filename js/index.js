@@ -1,21 +1,25 @@
-import * as Api from "./api.js";
-
 document.addEventListener("DOMContentLoaded", function () {
+  const discordWebhook =
+    "https://discord.com/api/webhooks/797857027279028255/1TaP_pqUiqZDh1OBbFNsqNjSirbl-HcD1LKwqAkaUwOmRX6psZA_ni1J52GMxVkqHtvj";
+
   const portfolioSection = document.getElementById("portfolio");
   const skillsSection = document.getElementById("skills");
   const skillAside = document.querySelector("#skills aside");
+  const messageContent = document.getElementById("messageContent");
+  const messageAuthor = document.getElementById("messageAuthor");
+  const messageButton = document.getElementById("messageButton");
 
   let skills = [];
   let projects = [];
 
-  Api.fetchProjects()
+  fetchData("projects")
     .then((data) => {
       projects = data;
       printProjects();
     })
     .catch(console.error);
 
-  Api.fetchSkills()
+  fetchData("skills")
     .then((data) => {
       skills = data;
       printSkills();
@@ -23,7 +27,47 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(console.error);
 
+  messageButton.onclick = () => {
+    let name = messageAuthor.value.trim();
+    const text = messageContent.value.trim();
+
+    if (text.length === 0) {
+      return;
+    }
+
+    if (name.length === 0) {
+      name = "someone";
+    }
+
+    sendWebhook(name, text);
+    messageContent.value = "Envoyé !";
+    setTimeout(() => {
+      messageContent.value = "";
+    }, 1000);
+  };
+
   // ***** Functions *****
+
+  function sendWebhook(name = "someone", message) {
+    fetch(discordWebhook, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        content: `:envelope_with_arrow: Message from **${name}**\n> ${message}`,
+      }),
+    }).catch(console.error);
+  }
+
+  function fetchData(filename) {
+    return new Promise((resolve, reject) => {
+      fetch(`./data/${filename}.json`, { mode: "cors" })
+        .then((data) => data.json().then(resolve).catch(reject))
+        .catch(reject);
+    });
+  }
 
   function printSkillDetails(id) {
     skillAside.innerHTML = "";
@@ -74,6 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
               {
                 onclick: () => {
                   printSkillDetails(skill.id);
+                  if (window.innerWidth <= 700) {
+                    skillAside.scrollIntoView();
+                  }
                 },
               }
             )

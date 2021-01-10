@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Punto",
+    "subtitle": "An online gaming platform",
+    "description": "This project is a client/server application, based on a global chat and allowing users to play together.",
+    "skills": ["JavaScript", "CSS3", "HTML5", "Node", "Socket.io", "Mocha"],
+    "image": "assets/projects/punto.png",
+    "repository": "FrancoisPog/Punto"
+  },
+  {
+    "name": "EasyLatex",
+    "subtitle": "An intuitive Latex editor",
+    "description": "With this personal project, I wanted to develop useful tools. This website allow to create LaTex documents from easy markup language. ",
+    "skills": ["JavaScript", "HTML5", "SCSS", "Node", "PHP", "LaTex"],
+    "image": "assets/projects/easylatex.png",
+    "repository": "FrancoisPog/EasyLatex"
+  },
+  {
+    "name": "Vélocity",
+    "subtitle": "A self-service bicycle system",
+    "description": "",
+    "skills": ["Java", "JUnit", "Maven", "Selenium", "OOP"],
+    "image": "",
+    "repository": "FrancoisPog/Vélocité"
+  }
+]

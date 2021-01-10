@@ -28,6 +28,7 @@
   font-style: italic;
 }
 $main_width: 80rem;
+$mobile_width: 700px;
 
 $lightBackgroundColor: #f2f1f1;
 $lightTextColor: black;
@@ -52,6 +53,18 @@ html {
   }
 }
 
+@include responsive(1200px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@include responsive(1000px) {
+  html {
+    font-size: 9px;
+  }
+}
+
 body {
   background-color: $lightBackgroundColor;
   font-family: "Space Mono", cursive;
@@ -60,6 +73,12 @@ body {
 main {
   width: $main_width;
   margin: auto;
+
+  @include responsive($mobile_width) {
+    & {
+      width: 90%;
+    }
+  }
 }
 
 p {
@@ -94,31 +113,70 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
+  @include responsive($mobile_width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-top: 10rem;
+  }
+
   img {
     grid-column: 1 / 1;
     display: inline-block;
     border: 3px solid black;
     width: 100%;
+    @include responsive($mobile_width) {
+      width: 60%;
+    }
   }
 
   article {
     grid-column: 2 / 4;
+
     width: 100%;
-    padding: 5rem 7rem;
+    padding: 0 7rem;
+
+    @include responsive($mobile_width) {
+      padding: 0;
+    }
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     h1 {
       width: max-content;
       font-weight: bold;
       font-size: 4rem;
+
+      @include responsive($mobile_width) {
+        margin: 2rem 0;
+      }
     }
 
     p {
       font-size: 2rem;
+      width: 100%;
+    }
+
+    #news {
+      margin-top: 3rem;
+      font-size: 1.6rem;
+      position: relative;
+      margin-left: 3rem;
+      padding-left: 1rem;
+      border-left: 3px solid black;
+      &::before {
+        content: "📬";
+        position: absolute;
+        left: -3rem;
+      }
+      @include responsive($mobile_width) {
+        width: 90%;
+      }
     }
   }
 }
@@ -181,8 +239,16 @@ section#portfolio .project {
     flex-direction: row-reverse;
   }
 
+  @include responsive($mobile_width) {
+    flex-direction: column !important;
+  }
+
   img {
     width: 48%;
+    @include responsive($mobile_width) {
+      width: 90%;
+      margin: auto;
+    }
     border: 3px solid black;
     margin: 0;
     transition: all 200ms;
@@ -191,6 +257,10 @@ section#portfolio .project {
   article {
     position: relative;
     width: 48%;
+    @include responsive($mobile_width) {
+      width: 90%;
+      margin: auto;
+    }
     padding: 1rem;
 
     h3 {
@@ -216,14 +286,17 @@ section#portfolio .project {
 
     p.project-skills {
       font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
       span {
         border: 2px solid black;
-        margin: 1rem 0;
+        margin: 0.5rem 0.5rem 0 0.5rem;
         display: inline-block;
         padding: 0.3rem 0.5rem;
-
-        + span {
-          margin-left: 1rem;
+        @include responsive($mobile_width) {
+          margin: 1rem 1rem 0 1rem;
         }
       }
     }
@@ -260,9 +333,14 @@ section#skills aside {
 
   img {
     float: left;
-    width: 10rem;
     margin-right: 1rem;
-    max-height: 10rem;
+    height: 10rem;
+    max-width: 12rem;
+
+    @include responsive($mobile_width) {
+      width: 8rem;
+      max-height: 8rem;
+    }
   }
 
   article {
@@ -305,15 +383,22 @@ section#skills article {
   }
 
   .skills-group {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    @include responsive($mobile_width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     margin-left: 3rem;
+    margin: 2rem 0;
+
     img {
-      height: 7rem;
-      max-width: 10rem;
+      max-height: 7rem;
+      width: 100%;
       cursor: pointer;
-      margin: 1rem;
+      @include responsive($mobile_width) {
+        margin-bottom: 1rem;
+        max-width: 80%;
+      }
     }
   }
 }
@@ -325,6 +410,13 @@ section#contact {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @include responsive($mobile_width) {
+      & {
+        flex-direction: column;
+      }
+    }
+
     p {
       font-size: 2rem;
     }
