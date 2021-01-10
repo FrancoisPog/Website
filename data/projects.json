@@ -11,12 +11,12 @@
     "name": "EasyLatex",
     "subtitle": "An intuitive Latex editor",
     "description": "With this personal project, I wanted to develop useful tools. This website allow to create LaTex documents from easy markup language. ",
-    "skills": ["JavaScript", "HTML5", "SCSS", "Node", "PHP", "LaTex"],
+    "skills": ["JavaScript", "HTML5", "SCSS", "PHP", "LaTex"],
     "image": "assets/projects/easylatex.png",
     "repository": "FrancoisPog/EasyLatex"
   },
   {
-    "name": "Vélocity",
+    "name": "Velocity",
     "subtitle": "A self-service bicycle system",
     "description": "This java application is a self-service bicycle system. Several famous design patterns are used in this project. This program is fully tested.",
     "skills": ["Java", "JUnit", "Maven", "Selenium", "OOP"],
