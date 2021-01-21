@@ -3,29 +3,29 @@
 // ***** MIXINS *****
 
 @mixin responsive($maxWitdh, $minWidth: 0) {
-  @media screen and (max-width: $maxWitdh) and (min-width: $minWidth) {
-    @content;
-  }
+    @media screen and (max-width: $maxWitdh) and (min-width: $minWidth) {
+        @content;
+    }
 }
 
 // ***** VARIABLES *****
 
 // Fonts
 @font-face {
-  font-family: "Space Mono";
-  src: url("../assets/fonts/space_mono/SpaceMono-Regular.ttf") format("truetype");
-  font-weight: normal;
+    font-family: "Space Mono";
+    src: url("../assets/fonts/space_mono/SpaceMono-Regular.ttf") format("truetype");
+    font-weight: normal;
 }
 @font-face {
-  font-family: "Space Mono";
-  src: url("../assets/fonts/space_mono/SpaceMono-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: "Space Mono";
+    src: url("../assets/fonts/space_mono/SpaceMono-Bold.ttf") format("truetype");
+    font-weight: bold;
 }
 @font-face {
-  font-family: "Space Mono";
-  src: url("../assets/fonts/space_mono/SpaceMono-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
+    font-family: "Space Mono";
+    src: url("../assets/fonts/space_mono/SpaceMono-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
 }
 $main_width: 80rem;
 $mobile_width: 700px;
@@ -36,445 +36,451 @@ $lightTextColor: black;
 // ***** STYLESHEET *****
 
 .debug {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 *::selection {
-  background-color: transparentize($color: blue, $amount: 0.5);
-  height: 100%;
+    background-color: transparentize($color: blue, $amount: 0.5);
+    height: 100%;
 }
 
 html {
-  font-size: 13px;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+    font-size: 13px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @include responsive(1200px) {
-  html {
-    font-size: 11px;
-  }
+    html {
+        font-size: 11px;
+    }
 }
 
 @include responsive(1000px) {
-  html {
-    font-size: 9px;
-  }
+    html {
+        font-size: 9px;
+    }
 }
 
 body {
-  background-color: $lightBackgroundColor;
-  font-family: "Space Mono", cursive;
+    background-color: $lightBackgroundColor;
+    font-family: "Space Mono", cursive;
 }
 
 main {
-  width: $main_width;
-  margin: auto;
+    width: $main_width;
+    margin: auto;
 
-  @include responsive($mobile_width) {
-    & {
-      width: 90%;
+    @include responsive($mobile_width) {
+        & {
+            width: 90%;
+        }
     }
-  }
 }
 
 p {
-  line-height: 1.2;
-  text-align: justify;
+    line-height: 1.2;
+    text-align: justify;
 
-  strong {
-    font-weight: bold;
-  }
+    strong {
+        font-weight: bold;
+    }
 }
 
 a.inline {
-  color: $lightTextColor;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  border-bottom: $lightTextColor 2px solid;
+    color: $lightTextColor;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: $lightTextColor 2px solid;
 
-  &:hover {
-    border-bottom-color: transparent;
-  }
+    &:hover {
+        border-bottom-color: transparent;
+    }
 }
 
 body > aside {
-  width: max-content;
-  margin: 1rem auto;
-  font-size: 1.5rem;
+    width: max-content;
+    margin: 1rem auto;
+    font-size: 1.5rem;
 }
 
 header {
-  margin-top: 11rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  @include responsive($mobile_width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    margin: auto;
-    margin-top: 10rem;
-  }
-
-  img {
-    grid-column: 1 / 1;
-    display: inline-block;
-    border: 3px solid black;
-    width: 100%;
-    @include responsive($mobile_width) {
-      width: 60%;
-    }
-  }
-
-  article {
-    grid-column: 2 / 4;
-
-    width: 100%;
-    padding: 0 7rem;
+    margin-top: 11rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     @include responsive($mobile_width) {
-      padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+        margin-top: 10rem;
     }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    h1 {
-      width: max-content;
-      font-weight: bold;
-      font-size: 4rem;
-
-      @include responsive($mobile_width) {
-        margin: 2rem 0;
-      }
+    img {
+        grid-column: 1 / 1;
+        display: inline-block;
+        border: 3px solid black;
+        width: 100%;
+        @include responsive($mobile_width) {
+            width: 60%;
+        }
     }
 
-    p {
-      font-size: 2rem;
-      width: 100%;
-    }
+    article {
+        grid-column: 2 / 4;
 
-    #news {
-      margin-top: 3rem;
-      font-size: 1.6rem;
-      position: relative;
-      margin-left: 3rem;
-      padding-left: 1rem;
-      border-left: 3px solid black;
-      &::before {
-        content: "📬";
-        position: absolute;
-        left: -3rem;
-      }
-      @include responsive($mobile_width) {
-        width: 90%;
-      }
+        width: 100%;
+        padding: 0 7rem;
+
+        @include responsive($mobile_width) {
+            padding: 0;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        h1 {
+            width: max-content;
+            font-weight: bold;
+            font-size: 4rem;
+
+            @include responsive($mobile_width) {
+                margin: 2rem 0;
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            width: 100%;
+        }
+
+        #news {
+            margin-top: 3rem;
+            font-size: 1.6rem;
+            position: relative;
+            margin-left: 3rem;
+            padding-left: 1rem;
+            border-left: 3px solid black;
+            &::before {
+                content: "📬";
+                position: absolute;
+                left: -3rem;
+            }
+            @include responsive($mobile_width) {
+                width: 90%;
+            }
+        }
     }
-  }
 }
 
 section {
-  margin: 10rem 0;
+    margin: 10rem 0;
 
-  > p {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 3rem;
-
-    &::before {
-      content: "#";
-      margin-right: 1rem;
+    > p {
+        font-size: 2rem;
     }
-  }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+
+        &::before {
+            content: "#";
+            margin-right: 1rem;
+        }
+    }
 }
 
 section#about {
-  p {
-    font-size: 2rem;
-    + p {
-      margin-top: 5rem;
+    p {
+        font-size: 2rem;
+        + p {
+            margin-top: 5rem;
+        }
     }
-  }
 
-  $emojis: (
-    1: "📚",
-    2: "🔭",
-    3: "🏃‍♂️",
-  );
+    $emojis: (
+        1: "📚",
+        2: "🔭",
+        3: "🏃‍♂️",
+    );
 
-  @each $index, $emoji in $emojis {
-    p:nth-of-type(#{$index}):before {
-      content: $emoji;
+    @each $index, $emoji in $emojis {
+        p:nth-of-type(#{$index}):before {
+            content: $emoji;
+        }
     }
-  }
 }
 
 section#portfolio {
-  > p::before {
-    content: "💾";
-    margin-right: 1rem;
-  }
+    > p::before {
+        content: "💾";
+        margin-right: 1rem;
+    }
 }
 
 section#portfolio .project {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  margin-top: 5rem;
+    margin-top: 5rem;
 
-  &:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
 
-  @include responsive($mobile_width) {
-    flex-direction: column !important;
-  }
-
-  img {
-    width: 48%;
     @include responsive($mobile_width) {
-      width: 90%;
-      margin: auto;
-    }
-    border: 3px solid black;
-    margin: 0;
-    transition: all 200ms;
-  }
-
-  article {
-    position: relative;
-    width: 48%;
-    @include responsive($mobile_width) {
-      width: 90%;
-      margin: auto;
-    }
-    padding: 1rem;
-
-    h3 {
-      width: max-content;
-      font-weight: bold;
-      font-size: 2rem;
-      border-bottom: $lightTextColor solid 2px;
-      padding-bottom: 0.5rem;
-      margin-bottom: 0.5rem;
+        flex-direction: column !important;
     }
 
-    h4 {
-      font-size: 1.5rem;
-      font-style: italic;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.3rem;
-      max-height: 11rem;
-      overflow: hidden;
-    }
-
-    p.project-skills {
-      font-size: 1rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-      span {
-        border: 2px solid black;
-        margin: 0.5rem 0.5rem 0 0.5rem;
-        display: inline-block;
-        padding: 0.3rem 0.5rem;
+    img {
+        width: 48%;
         @include responsive($mobile_width) {
-          margin: 1rem 1rem 0 1rem;
+            width: 90%;
+            margin: auto;
         }
-      }
+        border: 3px solid black;
+        margin: 0;
+        transition: all 200ms;
     }
 
-    a {
-      display: none;
+    article {
+        position: relative;
+        width: 48%;
+        @include responsive($mobile_width) {
+            width: 90%;
+            margin: auto;
+        }
+        padding: 1rem;
+
+        h3 {
+            width: max-content;
+            font-weight: bold;
+            font-size: 2rem;
+            border-bottom: $lightTextColor solid 2px;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            max-height: 11rem;
+            overflow: hidden;
+        }
+
+        p.project-skills {
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            span {
+                border: 2px solid black;
+                margin: 0.5rem 0.5rem 0 0.5rem;
+                display: inline-block;
+                padding: 0.3rem 0.5rem;
+                @include responsive($mobile_width) {
+                    margin: 1rem 1rem 0 1rem;
+                }
+            }
+        }
+
+        a {
+            display: none;
+        }
     }
-  }
 }
 
 section#skills {
-  > p::before {
-    content: "🛠️";
-    margin-right: 1rem;
-  }
+    > p::before {
+        content: "🛠️";
+        margin-right: 1rem;
+    }
 }
 
 section#skills aside {
-  width: 100%;
-  border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  padding: 2rem 0;
-  margin: 2rem 0;
-  transition: all 200ms;
-  max-height: max-content;
-  overflow: hidden;
+    width: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    transition: all 200ms;
+    max-height: max-content;
+    overflow: hidden;
 
-  &.hidden {
-    max-height: 0;
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-
-  img {
-    float: left;
-    margin-right: 1rem;
-    height: 10rem;
-    max-width: 12rem;
-
-    @include responsive($mobile_width) {
-      width: 8rem;
-      max-height: 8rem;
+    &.hidden {
+        max-height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
     }
-  }
 
-  article {
-    h4 {
-      font-size: 1.7rem;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1.5rem;
+    img {
+        float: left;
+        margin-right: 1rem;
+        height: 10rem;
+        max-width: 12rem;
 
-      a + a {
-        margin-left: 1rem;
-        position: relative;
-        &::before {
-          content: ", ";
-          position: absolute;
-          left: -1rem;
+        @include responsive($mobile_width) {
+            width: 8rem;
+            max-height: 8rem;
         }
-      }
     }
-    .usage-links {
-      margin-top: 1rem;
-      &::before {
-        content: ">";
-      }
+
+    article {
+        h4 {
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.5rem;
+
+            a + a {
+                margin-left: 1rem;
+                position: relative;
+                &::before {
+                    content: ", ";
+                    position: absolute;
+                    left: -1rem;
+                }
+            }
+        }
+        .usage-links {
+            margin-top: 1rem;
+            &::before {
+                content: ">";
+            }
+        }
     }
-  }
 }
 
 section#skills article {
-  h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    &::before {
-      content: "🔨";
-      margin-right: 1rem;
-    }
-  }
-
-  .skills-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    @include responsive($mobile_width) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    margin-left: 3rem;
-    margin: 2rem 0;
-
-    img {
-      max-height: 7rem;
-      width: 100%;
-      cursor: pointer;
-      @include responsive($mobile_width) {
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
         margin-bottom: 1rem;
-        max-width: 80%;
-      }
+        &::before {
+            content: "🔨";
+            margin-right: 1rem;
+        }
     }
-  }
+
+    .skills-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @include responsive($mobile_width) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        margin-left: 3rem;
+        margin: 2rem 0;
+
+        img {
+            max-height: 7rem;
+            width: 100%;
+            cursor: pointer;
+            @include responsive($mobile_width) {
+                margin-bottom: 1rem;
+                max-width: 80%;
+            }
+        }
+    }
 }
 
 section#contact {
-  div {
-    margin: auto;
+    div {
+        margin: auto;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    @include responsive($mobile_width) {
-      & {
-        flex-direction: column;
-      }
-    }
-
-    p {
-      font-size: 2rem;
-    }
-
-    aside {
-      display: flex;
-      flex-direction: column;
-      margin: 0 2rem;
-      p {
-        margin-bottom: 0.5rem;
-      }
-
-      ul#contact-links {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 2rem 0;
 
-        a {
-          height: 3rem;
-          display: inline-block;
-          margin: 1rem;
-          img,
-          i {
-            height: 100%;
-            font-size: 2.8rem;
-          }
-        }
-      }
-
-      input,
-      textarea,
-      button {
-        border: none;
-        background-color: darken($lightBackgroundColor, 10%);
-        padding: 1rem;
-        font-family: "Space Mono", cursive;
-        margin: 0.5rem 0;
-
-        &:focus {
-          border: none;
-          outline: none;
-        }
-      }
-
-      button {
-        cursor: pointer;
-        padding: 0.5rem;
-        &:hover {
-          border: 0.3rem solid darken($lightBackgroundColor, 20%);
-          padding: 0.2rem;
+        @include responsive($mobile_width) {
+            & {
+                flex-direction: column;
+            }
         }
 
-        &:active {
-          font-weight: bold;
+        p {
+            font-size: 2rem;
         }
-      }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            margin: 0 2rem;
+            p {
+                margin-bottom: 0.5rem;
+            }
+
+            ul#contact-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 2rem 0;
+
+                a {
+                    height: 3rem;
+                    display: inline-block;
+                    margin: 1rem;
+                    img,
+                    i {
+                        height: 100%;
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+
+            input,
+            textarea,
+            button {
+                border: none;
+                background-color: darken($lightBackgroundColor, 10%);
+                padding: 1rem;
+                font-family: "Space Mono", cursive;
+                margin: 0.5rem 0;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                padding: 0.5rem;
+                &:hover {
+                    border: 0.3rem solid darken($lightBackgroundColor, 20%);
+                    padding: 0.2rem;
+                }
+
+                &:active {
+                    font-weight: bold;
+                }
+            }
+        }
     }
-  }
+}
+
+section#more {
+    p + p {
+        margin-top: 3rem;
+    }
 }

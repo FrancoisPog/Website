@@ -1,130 +1,130 @@
 {
-  "Tools": [
-    [
-      {
-        "id": "webstorm",
-        "name": "WebStorm",
-        "description": "I have used this IDE in the past for web projects, I liked its cool features, especially for testing and the control version."
-      },
-      {
-        "id": "intellij",
-        "name": "IntelliJ",
-        "description": "For a java project a university, I used intelliJ to learn about software development, with tests, and CI / CD, managed by Maven."
-      },
-      {
-        "id": "vscode",
-        "name": "Visual Studio Code",
-        "description": "VScode is my everyday tool, I like to configure it to meet all my needs."
-      },
-      {
-        "id": "git",
-        "name": "Git",
-        "description": "I use Git for all my projects and I'm still learning to explore all the features provided by Git."
-      },
-      {
-        "id": "github",
-        "name": "GitHub",
-        "description": "Coupled with git, Github is the main tool I use to manage my projects and collaborate on team projects. I often set up a CI / CD system to keep control."
-      },
-      {
-        "id": "gitlab",
-        "name": "GitLab",
-        "description": "As an alternative to GitHub, I have sometimes used GitLab, for the same purposes."
-      },
-      {
-        "id": "eclipse",
-        "name": "Eclipse",
-        "description": "I used eclipse for my first java projects, although it is quite handy, now I prefer to use IntelliJ."
-      }
-    ]
-  ],
-  "Languages and frameworks": [
-    [
-      {
-        "id": "html",
-        "name": "HTML5",
-        "description": "Since I've been using HTML for quite a long time now, I'm trying to improve my code for SEO or accessibility purposes."
-      },
-      {
-        "id": "javascript",
-        "name": "JavaScript",
-        "description": "I am used to coding with JavaScript in all my web projects, client or server side. I really like this language and its multiple paradigms, functional and object-oriented programming.",
-        "uses": { "Punto": "FrancoisPog/Punto" }
-      },
-      {
-        "id": "scss",
-        "name": "Scss",
-        "description": "I often prefer use Scss instead of css, to organize my codebase easily."
-      },
-      {
-        "id": "php",
-        "name": "PHP",
-        "description": "It is the first server language I learned, I used it for many web projects."
-      },
-      {
-        "id": "node",
-        "name": "Node",
-        "description": "I have been using node for a year, and I really like it, to develop APis, or socket server. "
-      },
-      {
-        "id": "react",
-        "name": "React",
-        "description": "By discovering progressive web applications, I learned React, and I found this framework really practical to manage the user interface with many components, for me it is a good alternative to vanilla JS, to create applications without huge frameworks."
-      }
+    "Tools": [
+        [
+            {
+                "id": "webstorm",
+                "name": "WebStorm",
+                "description": "I have used this IDE in the past for web projects, I liked its cool features, especially for testing and the control version."
+            },
+            {
+                "id": "intellij",
+                "name": "IntelliJ",
+                "description": "For a java project a university, I used intelliJ to learn about software development, with tests, and CI / CD, managed by Maven."
+            },
+            {
+                "id": "vscode",
+                "name": "Visual Studio Code",
+                "description": "VScode is my everyday tool, I like to configure it to meet all my needs."
+            },
+            {
+                "id": "git",
+                "name": "Git",
+                "description": "I use Git for all my projects and I'm still learning to explore all the features provided by Git."
+            },
+            {
+                "id": "github",
+                "name": "GitHub",
+                "description": "Coupled with git, Github is the main tool I use to manage my projects and collaborate on team projects. I often set up a CI / CD system to keep control."
+            },
+            {
+                "id": "gitlab",
+                "name": "GitLab",
+                "description": "As an alternative to GitHub, I have sometimes used GitLab, for the same purposes."
+            },
+            {
+                "id": "eclipse",
+                "name": "Eclipse",
+                "description": "I used eclipse for my first java projects, although it is quite handy, now I prefer to use IntelliJ."
+            }
+        ]
     ],
-    [
-      {
-        "id": "java",
-        "name": "Java",
-        "description": "I started to learn computer science with java, then I used it to discover object oriented paradigms."
-      },
-      {
-        "id": "mysql",
-        "name": "MySQL",
-        "description": "For software or web applications I often use MySql to manage the database. I learned two years ago how to design and normalization database."
-      },
-      {
-        "id": "mongodb",
-        "name": "MongoDB",
-        "description": "Instead of MySQL I sometimes use MongoDb for the database, for Node APIs for example. I found it interesting to learn how to manage NoSql databases."
-      },
-      {
-        "id": "ruby",
-        "name": "Ruby",
-        "description": "I discovered ruby ​​this year, I liked it a lot, and I would like to continue with the Ruby On Rails web framework."
-      },
-      {
-        "id": "scheme",
-        "name": "Scheme",
-        "description": "In order to learn the functional programming paradigm, I learned Scheme, I liked this paradigm, even though this language is not really practical."
-      },
-      {
-        "id": "uml",
-        "name": "UML",
-        "description": "For analysis and modeling in projects, I use UML to create diagrams of different types and collaborate more easily with others."
-      }
-    ],
-    [
-      {
-        "id": "c",
-        "name": "C",
-        "description": "I first learned C to discover data structures and algorithms complexity, then for system and network programming with linux. "
-      },
-      {
-        "id": "cpp",
-        "name": "C++",
-        "description": "After the C, I learned C++ in the language theory course, to manipulate automatons. I will soon have a course on C++ to deepen its multiple paradigms."
-      },
-      {
-        "id": "bash",
-        "name": "Bash",
-        "description": "To manipulate unix systems, I use bash (or dash) scripts, I used it to create some automation tools. "
-      },
-      {
-        "id": "ubuntu",
-        "name": "Ubuntu",
-        "description": "Since working with dual Windows / Linux boot, I use Ubuntu or derivative distributions like Elementary OS."
-      }
+    "Languages and frameworks": [
+        [
+            {
+                "id": "html",
+                "name": "HTML5",
+                "description": "Since I've been using HTML for quite a long time now, I'm trying to improve my code for SEO or accessibility purposes."
+            },
+            {
+                "id": "javascript",
+                "name": "JavaScript",
+                "description": "I am used to coding with JavaScript in all my web projects, client or server side. I really like this language and its multiple paradigms, functional and object-oriented programming.",
+                "uses": { "Punto": "FrancoisPog/Punto" }
+            },
+            {
+                "id": "scss",
+                "name": "Scss",
+                "description": "I often prefer use Scss instead of css, to organize my codebase easily."
+            },
+            {
+                "id": "php",
+                "name": "PHP",
+                "description": "It is the first server language I learned, I used it for many web projects."
+            },
+            {
+                "id": "node",
+                "name": "Node",
+                "description": "I have been using node for a year, and I really like it, to develop APis, or socket server. "
+            },
+            {
+                "id": "react",
+                "name": "React",
+                "description": "By discovering progressive web applications, I learned React, and I found this framework really practical to manage the user interface with many components, for me it is a good alternative to vanilla JS, to create applications without huge frameworks."
+            }
+        ],
+        [
+            {
+                "id": "java",
+                "name": "Java",
+                "description": "I started to learn computer science with java, then I used it to discover object oriented paradigms."
+            },
+            {
+                "id": "mysql",
+                "name": "MySQL",
+                "description": "For software or web applications I often use MySql to manage the database. I learned two years ago how to design and normalization database."
+            },
+            {
+                "id": "mongodb",
+                "name": "MongoDB",
+                "description": "Instead of MySQL I sometimes use MongoDb for the database, for Node APIs for example. I found it interesting to learn how to manage NoSql databases."
+            },
+            {
+                "id": "ruby",
+                "name": "Ruby",
+                "description": "I discovered ruby ​​this year, I liked it a lot, and I would like to continue with the Ruby On Rails web framework, I hope soon !"
+            },
+            {
+                "id": "scheme",
+                "name": "Scheme",
+                "description": "In order to learn the functional programming paradigm, I learned Scheme, I liked this paradigm, even though this language is not really practical."
+            },
+            {
+                "id": "uml",
+                "name": "UML",
+                "description": "For analysis and modeling in projects, I use UML to create diagrams of different types and collaborate more easily with others."
+            }
+        ],
+        [
+            {
+                "id": "c",
+                "name": "C",
+                "description": "I first learned C to discover data structures and algorithms complexity, then for system and network programming with linux. "
+            },
+            {
+                "id": "cpp",
+                "name": "C++",
+                "description": "After the C, I learned C++ in the language theory course, to manipulate automatons. I will soon have a course on C++ to deepen its multiple paradigms."
+            },
+            {
+                "id": "bash",
+                "name": "Bash",
+                "description": "To manipulate unix systems, I use bash (or dash) scripts, I used it to create some automation tools. "
+            },
+            {
+                "id": "ubuntu",
+                "name": "Ubuntu",
+                "description": "Since working with dual Windows / Linux boot, I use Ubuntu or derivative distributions like Elementary OS."
+            }
+        ]
     ]
-  ]
 }

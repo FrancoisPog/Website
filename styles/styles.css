@@ -715,4 +715,8 @@ section#contact div aside button:hover {
 section#contact div aside button:active {
   font-weight: bold;
 }
+
+section#more p + p {
+  margin-top: 3rem;
+}
 /*# sourceMappingURL=styles.css.map */
