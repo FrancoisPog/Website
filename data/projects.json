@@ -1,11 +1,11 @@
 [
     {
-        "name": "Punto",
-        "subtitle": "An online gaming platform",
-        "description": "This project is a client/server application, based on a global chat and allowing users to play together.",
-        "skills": ["JavaScript", "CSS3", "HTML5", "Node", "Socket.io", "Mocha"],
-        "image": "assets/projects/punto.png",
-        "repository": "FrancoisPog/Punto"
+        "name": "Guacamole",
+        "subtitle": "A pharmacist training application",
+        "description": "This project is a progressive web application developed with 2 teammates for the third year annual project. It allows student pharmacists to train and challenge themselves on quizzes on molecules and their properties. this project started in september is still ongoing and will end in march 2021.",
+        "skills": ["React", "Node", "SCSS", "MySQL", "CI/CD", "Team Work"],
+        "image": "assets/projects/guacamole1.png",
+        "repository": "ValFraNath/glowing-octo-guacamole"
     },
     {
         "name": "EasyLatex",
