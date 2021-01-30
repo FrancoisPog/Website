@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     sendWebhook(
         "The concierge",
         `Someone is visiting your website. ${
-            document.referrer && "He came from" + document.referrer
+            document.referrer && "He cames from " + document.referrer
         }`
     );
 
